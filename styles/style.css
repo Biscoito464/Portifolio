@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+:root{
+    --cor-principal: #1E201E;
+    --cor-secundaria: #DAD4B5;
+    --cor-terciaria: #80B9AD;
+    --cot-hover: #F2E8C6;
+
+    --font-principal: 'Oswald', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: var(--cor-principal);
+    color: var(--cor-secundaria);
+    box-sizing: border-box;
+    font-family: var(--font-principal);
+}
+.cabecalho{
+    padding: 2% 0% 0% 10%;
+}
+.cabecalho__menu{
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+    align-items: center;
+    color: var(--cor-terciaria);
+    justify-content: center;
+}
+.cabecalho__menu__links{
+    text-decoration: none;
+    color: var(--cor-terciaria);
+}
+.foto{
+    width: 50%;
+    border: 2px solid var(--cor-terciaria);
+    padding: 5px;
+    border-radius: 16px;
+}
+.inicio{
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+.inicio__conteudo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.inicio__conteudo__titulo{
+    font-size: 2.25rem;
+}
+span{
+    color: var(--cor-terciaria);
+}
+.apresentacao{
+    font-size: 1.5rem;
+    height: 100;
+}
+.botoes__title{
+    font-weight: 400;
+    font-size: 1.5;
+}
+.botoes{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+.links{
+    /* background-color: #22D4FD; */
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    border: 2px solid var(--cor-terciaria);
+}
+.links:hover {
+    cursor: pointer;
+    background-color: var(--cot-hover);
+    color: var(--cor-terciaria);
+}
+.rodape{
+    display: flex;
+    background-color: var(--cor-terciaria);
+    color: var(--cor-principal);
+    font-size: 1.5rem;
+    font-weight: 400;
+    justify-content: center;
+    padding: 24px;
+}
+.inicio__projetos{
+    display: flex;
+}
+.numero-secreto{
+    width: 300px;
+    display: flex;
+}
+@media (max-width: 1200px ) {
+    .cabecalho{
+        padding: 8%;
+        font-size: 1.5rem ;
+    }
+    .cabecalho__menu{
+        justify-content: center;
+        gap: 10px;
+    }
+    .inicio{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .inicio__conteudo{
+        width: auto;
+    }
+}
