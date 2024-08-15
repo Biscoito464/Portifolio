@@ -92,7 +92,22 @@ span{
     background-color: var(--cot-hover);
     color: var(--cor-terciaria);
 }
+.headline {
+    width: 100%;
+    padding: 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+.headline h1 {
+    font-size: 2rem;
+}
+
+.headline span {
+    font-size: 1.3rem;
+}
 /* PROJECTS */
 .projects {
     width: 100%;
