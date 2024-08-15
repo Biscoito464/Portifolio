@@ -1,13 +1,26 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/x-icon" href="img/octocat.png">
+
     <title>Projetos</title>
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="icon" type="image/x-icon" href="./img/octocat.png">
+
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/responsividade.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
+    <!--Start HEADER-->
     <header class="cabecalho">
         <nav class="cabecalho__menu">
             <a class="cabecalho__menu__links" href="./index.html">Home</a>
@@ -16,21 +29,119 @@
             <a class="cabecalho__menu__links" href="./Curriculo.html" >Curriculo</a>
         </nav>
     </header>
-    <main class="inicio__projetos">
-        <h1>Projetos</h1>
-        <section>
-            <h2 class="primeiro_projeto">
-                Jogo do número secreto
-                <img src="./Projetos/jogo-do-numero-secreto.jpg" class="numero-secreto" alt="jogo-do-numero-secreto">
-                <P>Jogo onde o computador escolhe um numero aletorio e o jogador deve adivinhar o número escolido</P>
-            </h2>
-        </section>
-        
-    </main>
+    <!--End HEADER-->
+
+    <!--Start Section Projects-->
+    <section class="projects">
+        <div class="container-projects">
+
+            <div class="headline" data-aos="fade-up" data-aos-delay="100">
+                <span class="destaque">Veja soluções reais</span>
+                <h1>Alguns projetos</h1>
+            </div>
+
+            <div class="content-projects">
+                <div class="cards-projects">
+
+                    <!--Card Projeto 1-->
+                    <div class="card-project" data-aos="zoom-in" data-aos-delay="150">
+                        <div class="img-project">
+                            <img src="./Projetos/jogo-do-numero-secreto.jpg" alt="Jogo do numero secreto">
+                        </div>
+
+                        <div class="content-card">
+                            <div class="text-project">
+                                <h2>Jodo do número secreto</h2>
+                                <span>Educacional</span>
+                                <p>Jogo que o computador escolhe um numero aleatorio de 1 ate 10 e o usuario tem que adivinhar qual o numero escolido</p>
+                            </div>
+                            <div class="cta-project">
+                                <div class="tag-project">
+                                    <i class="fab fa-html5"></i>
+                                    <i class="fab fa-css3-alt"></i>
+                                    <i class="fab fa-js"></i>
+                                </div>
+                                <div class="btn-project">
+                                    <a href="https://numero-secreto-sepia-seven.vercel.app" target="_blank">Acesse o site</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Card Projeto 1-->
+
+                    <!--Card Projeto 2-->
+                    <div class="card-project" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="img-project">
+                            <img src="./Projetos/Alura+.jpg" alt="Alura+">
+                        </div>
+
+                        <div class="content-card">
+                            <div class="text-project">
+                                <h2>Alura+</h2>
+                                <span>Stream</span>
+                                <p>Site onde você pode contratar o stream de aula online.</p>
+                            </div>
+                            <div class="cta-project">
+                                <div class="tag-project">
+                                    <i class="fab fa-html5"></i>
+                                    <i class="fab fa-css3-alt"></i>
+                                </div>
+                                <div class="btn-project">
+                                    <a href="https://alura-red-seven.vercel.app" target="_blank">Acesse o site</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Card Projeto 2-->
+
+                    <!--Card Projeto 3-->
+                    <div class="card-project" data-aos="zoom-in" data-aos-delay="250">
+                        <div class="img-project">
+                            <img src="./Projetos/sorteador-de-numero.jpg" alt="projeto 3">
+                        </div>
+
+                        <div class="content-card">
+                            <div class="text-project">
+                                <h2>Sorteador de números</h2>
+                                <span>Educacional</span>
+                                <p>Site onde o usuario escolhe quantos números precisa e um intervalo e o site sortea os números.</p>
+                            </div>
+                            <div class="cta-project">
+                                <div class="tag-project">
+                                    <i class="fab fa-html5"></i>
+                                    <i class="fab fa-css3-alt"></i>
+                                    <i class="fab fa-js"></i>
+                                </div>
+                                <div class="btn-project">
+                                    <a href="https://sorteador-numeros-three-murex.vercel.app" target="_blank">Acesse o site</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Card Projeto 3-->
+    </section>
+    <!--End Section Projects-->
+
+    <!--Footer-->
     <footer>
-        <div class="rodape">
+        <div class="rodape__projects">
             <p>Desenvolvido por Caetano</p>
         </div>
     </footer>
+    <!--End Footer-->
+
+    <!--Scripts-->
+    <script src="/assets/js/imageScroll.js"></script>
+    <script src="/assets/js/menu.js"></script>
+    <script src="/assets/js/headerAnimation.js"></script>
+    <script src="/assets/js/textAnimation.js"></script>
+    <script src="/assets/js/particles.js"></script>
+    <script src="assets/js/changePagesAnimation.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
 </body>
+
 </html>
