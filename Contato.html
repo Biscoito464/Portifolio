@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./img/octocat.png">
+    <title>Contato</title>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+            <a class="cabecalho__menu__links" href="./index.html">Home</a>
+            <a class="cabecalho__menu__links" href="./about.html">Sobre mim</a>
+            <a class="cabecalho__menu__links" href="./projects.html">Projetos</a>
+            <a class="cabecalho__menu__links" href="./Curriculo.html">Currículo</a>
+            <a class="cabecalho__menu__links" href="./Contato.html">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-container">
+            <h1>Formulario em manutenção</h1>
+            <form id="contato-form">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem aqui" rows="5" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <section class="botoes">
+            <h2>Minhas Redes</h2>
+            <ul>
+                <li><a class="links" href="https://github.com/seuusuario" target="_blank">GitHub</a></li>
+                <li><a class="links" href="https://www.linkedin.com/in/seuusuario" target="_blank">LinkedIn</a></li>
+                <li><a class="links" href="https://twitter.com/seuusuario" target="_blank">Twitter</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - Seu Nome. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- EmailJS Script -->
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <!-- Seu script de envio de e-mail -->
+    <script src="./js/email.js"></script>
+</body>
+
+</html>
