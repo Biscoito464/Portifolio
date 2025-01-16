@@ -7,7 +7,9 @@
     align-items: center;
     padding-bottom: 2rem;
 }
-
+.headline{
+    padding: 24px;
+}
 .container-projects {
     width: 95%;
     display: flex;
@@ -26,7 +28,7 @@
 /* Container dos cards */
 .cards-projects {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
     gap: 2rem;
     justify-content: center;
 }
